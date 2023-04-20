@@ -1,4 +1,4 @@
-Here are instructions for using the "morpheme_counter" code:
+**Here are instructions for using the "morpheme_counter" code:**
 
 1. Open the project containing the forked repository.
 2. In the RStudio file pane, navigate to the folder where the "morpheme_counter" code is located.
