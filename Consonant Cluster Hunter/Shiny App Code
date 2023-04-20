@@ -14,8 +14,8 @@ ui <- fluidPage(
                      "Match" = "str_match")
       )
     ),
-    mainPanel(
-      tabsetPanel(
+    mainPanel( #the main panel contains 4 tabs: word initial, word medial, word final, and about this app
+      tabsetPanel( 
         type = "tabs",
         tabPanel("Word Initial", verbatimTextOutput("word_initial_output")),
         tabPanel("Word Medial", verbatimTextOutput("word_medial_output")),
@@ -33,8 +33,12 @@ ui <- fluidPage(
     )
   )
 ))
-
+ 
 server <- function(input, output) {
+  #The following code chunk determines the output displayed in the "Word Initial" tab based on the user's selected function.
+  # If the "Count" radio button is selected, it counts the number of word initial consonant clusters in the input text using str_count.
+  # If the "Extract" radio button is selected, it extracts all word initial consonant clusters from the input text using str_extract_all.
+  # If the "Match" radio button is selected, it matches all word initial consonant clusters in the input text using str_match_all.
   output$word_initial_output <- renderPrint({
     if (input$function_input == "str_count") {
       str_count(input$text_input, "\\b[bcdfghjklmnpqrstvwyz][bcdfghjklmnpqrstvwyz]")
@@ -44,7 +48,10 @@ server <- function(input, output) {
       str_match_all(input$text_input, "\\b[bcdfghjklmnpqrstvwyz][bcdfghjklmnpqrstvwyz]")
     } 
   })
-  
+  # The following code chunk determines the output displayed in the "Word Medial" tab based on the user's selected function.
+  # If the "Count" radio button is selected, it counts the number of word medial consonant clusters in the input text using str_count.
+  # If the "Extract" radio button is selected, it extracts all word medial consonant clusters from the input text using str_extract_all.
+  # If the "Match" radio button is selected, it matches all word medial consonant clusters in the input text using str_match_all.
   output$word_medial_output <- renderPrint({
     if (input$function_input == "str_count") {
       str_count(input$text_input, "[a-z][bcdfghjklmnpqrstvwyz][bcdfghjklmnpqrstvwyz][a-z]")
@@ -54,7 +61,10 @@ server <- function(input, output) {
       str_match_all(input$text_input, "[a-z][bcdfghjklmnpqrstvwyz][bcdfghjklmnpqrstvwyz][a-z]")
     }
   })
-  
+  # The following code chunk determines the output displayed in the "Word Final" tab based on the user's selected function.
+  # If the "Count" radio button is selected, it counts the number of word final consonant clusters in the input text using str_count.
+  # If the "Extract" radio button is selected, it extracts all word final consonant clusters from the input text using str_extract_all.
+  # If the "Match" radio button is selected, it matches all word final consonant clusters in the input text using str_match_all.
   output$word_final_output <- renderPrint({
     if (input$function_input == "str_count") {
       str_count(input$text_input, "[bcdfghjklmnpqrstvwyz][bcdfghjklmnpqrstvwyz]\\b")
