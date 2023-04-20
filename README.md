@@ -7,4 +7,4 @@ Here are some helpful intructions on how to access each project:
 3. Click on the Final-Portfolio repository to access the project.
 4. To run each project, follow the instructions provided in the README.md file located in each project folder. The README.md file provides an overview of each project, along with step-by-step instructions on how to run the project.
 
-Thank you for taking the time to check out my portfolio! 😊 I hope that each tool and resource I've provided proves to useful in your linguistic pursuits. 
+Thank you for taking the time to check out my portfolio!😊 I hope that each tool and resource I have created will assist you in your linguistic pursuits.
