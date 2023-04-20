@@ -5,6 +5,6 @@ Here are some helpful intructions on how to access each project:
 1. Visit the GitHub website and navigate to my profile page (which you're already on!).
 2. Click on the Repositories tab to access the list of repositories.
 3. Click on the Final-Portfolio repository to access the project.
-4. To run each project, follow the instructions provided in the README.md file located in each project folder. The README.md file provides an overview of each project, along with step-by-step instructions on how to run the project.
+4. To run each project, follow the instructions provided in the README.md file located in each project folder. The README.md file provides an overview of each project, along with step-by-step instructions on how to fork the project.
 
 Thank you for taking the time to check out my portfolio!😊 I hope that each tool and resource I have created will assist you in your linguistic pursuits.
