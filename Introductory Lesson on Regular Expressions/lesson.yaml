@@ -1,0 +1,104 @@
+- Class: LINGUIST 4PL3
+  Course: Allyson's Course
+  Lesson: Introductory Lesson on Regular Expressions
+  Author: Allyson Appleton
+  Type: Standard
+  Organization: McMaster University
+  Version: 2.4.5
+
+- Class: text
+  Output: Welcome to my introductory lesson on regular expressions!
+  
+- Class: text
+  Output: If you are new to R, you may be wondering... "what exactly are regular expressions?"
+  
+- Class: mult_question
+  Output: Let's take a guess! What are regular expressions?
+  AnswerChoices: Expressions that are regular; A pattern that describes a set of strings; A set of numbers used in calculations 
+  CorrectAnswer: A pattern that describes a set of strings 
+  AnswerTests: omnitest(correctVal= 'A pattern that describes a set of strings')
+  Hint: Our goal is to match patterns!
+
+- Class: text
+  Output: Great work! Now that you know what regular expressions are, let's move onto why regular expressions may be useful.
+
+- Class: text
+  Output: Regular expressions are useful for linguists, who may need to search for certain patterns in a text such as, a certain combination of letters, consonant clusters, or even white spaces!
+
+- Class: text
+  Output: As an example, If I would want to select for the letter "a" in the sentence, "An apple a day keeps the doctor away." Regular expressions could help me do that!
+
+- Class: text
+  Output: Let's give it a try!
+
+- Class: mult_question
+  Output: How do you think we could select for all instances of the the letter "a" in the sentence, "An apple a day keeps the doctor away."
+  AnswerChoices: aaaa; find the letter "a";"a"
+  CorrectAnswer: "a"
+  AnswerTests: omnitest(correctVal= '"a"')
+  Hint: Think of this like using the ctrl+F shortcut on your computer!
+
+- Class: text
+  Output: Amazing job! In R, there's a handy package called stringr that provides a user-friendly interface for working with regular expressions. One of the benefits of using stringr is that it offers consistent argument structures, making it even easier to work with regular expressions in your code.
+
+- Class: text
+  Output: Install the stringr package using, install.packages("stringr"), then load the package in using, library(stringr)
+  
+- Class: text
+  Output: In today's lesson we will be focussing on using str_count() and str_extract_all() functions to find consonant clusters! 
+
+- Class: text
+  Output: Think of this as a behind-the-scenes look into the code behind the Consonant Cluster Hunter app!
+  
+- Class: mult_question
+  Output: What does the `str_count()` function in R return when used to find consonant clusters?
+  AnswerChoices: Number of consonant clusters; Positions of consonant clusters; Replaced consonant clusters; Length of consonant clusters
+  CorrectAnswer: Number of consonant clusters
+  AnswerTests: omnitest(correctVal= 'Number of consonant clusters')
+  Hint: The `str_count()` function counts the occurrences of a pattern in a string.
+  
+- Class: mult_question
+  Output: What does the `str_extract_all()` function in R return when used to find consonant clusters?
+  AnswerChoices: First occurrence of a consonant cluster; All occurrences of consonant clusters; Positions of consonant clusters; Replaced consonant clusters
+  CorrectAnswer: All occurrences of consonant clusters
+  AnswerTests: omnitest(correctVal= 'All occurrences of consonant clusters')
+  Hint: The `str_extract_all()` function returns all occurrences of a pattern in a string.
+  
+- Class: mult_question
+  Output: Which of the following is an example of a word-initial consonant cluster in English?
+  AnswerChoices: br; ai; tk; ou
+  CorrectAnswer: br
+  AnswerTests: omnitest(correctVal= 'br')
+  Hint: Consonant clusters are two or more consonant sounds that occur consecutively without an intervening vowel.
+  
+- Class: mult_question
+  Output: Which of the following words contains a word medial consonant cluster?
+  AnswerChoices: thinking; oil; love; chips
+  CorrectAnswer: thinking
+  AnswerTests: omnitest(correctVal= 'thinking')
+  Hint: Word medial consonant clusters are usually surrounded by vowels.
+  
+- Class: cmd_question
+  Output:  How many words in this sentence contains consonant clusters? - Today is going to be an amazing and fantastic, day... don't you think?!
+  CorrectAnswer: 7
+  AnswerTests: omnitest(correctVal=7)
+  Hint: Pay attention to see if there are two consecutive consonants in each word! (hint-> the number is between 6 and 8)
+
+- Class: text
+  Output: Now that you got a hang of what consonant clusters are, let's move onto how regular expressions can be useful to select for them in a text.
+  
+- Class: text
+  Output: In the previous question, you were asked to count how many consonant clusters occured in a sentence - which was a tedious task! Now, imagine trying to indentify all consonant clusters in a large piece of text. Using Regex would have been very useful and convenient! 
+
+- Class: text
+  Output: The regex you could use would look something like this - "[bcdfghjklmnpqrstvwxyz][bcdfghjklmnpqrstvwxyz]". The square brackets encase character classes, which are used to match any one character within the brackets. In this case, the character class includes all consonants in the English alphabet. The regex matches any two consecutive consonants, which corresponds to a consonant cluster in a word. Altogether, your code should look something like this- str_count (string, "[bcdfghjklmnpqrstvwxyz][bcdfghjklmnpqrstvwxyz]")
+- Class: text
+  Output: YOU ARE A STAR! You've got the basics down pat!
+  
+- Class: text
+  Output: In the next lesson, we will be putting our basic knowledge to the test! You will apply your understanding of regular expressions and start writing code to find text patterns, like consonant clusters. You've got this :)
+  
+- Class: video
+  Output: Wait! Before you go, visit this link to access a cheatsheet for stringr. It's a valuable resource for learning about stringr functions and useful regular expressions! (Type Yes if you would like to visit the link)
+  VideoLink: https://evoldyn.gitlab.io/evomics-2018/ref-sheets/R_strings.pdf 
+
