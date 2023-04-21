@@ -11,7 +11,7 @@ Morpheme Counter is an advanced function designed to count the number of morphem
 
 **Here are instructions for using the "morpheme_counter" code:**
 
-1. Open the project containing the forked repository.
+1. In R Studio, open the project containing the forked repository.
 2. In the RStudio file pane, navigate to the folder where the "morpheme_counter" code is located.
 3. Open the file containing the "morpheme_counter" code and run it.
 4. Call the function by typing "morpheme_counter" followed by parentheses.
