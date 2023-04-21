@@ -1,4 +1,4 @@
-**What is Introductory Lesson on Regular Expressions?**
+#What is Introductory Lesson on Regular Expressions?
 
 A swirl course designed to provide learners with a foundation in using regular expressions in R. This course is intended to complement my Consonant Cluster Hunter app, as it offers users a behind-the-scenes look at the code (regular expressions) used to identify patterns, like consonant clusters.
 
@@ -21,8 +21,8 @@ The lesson covers the following topics:
 - Regular expressions for identifying consonant clusters in text
 
 **Instructions for accessing the course**
-- In R Studio, open the project containing the forked repository.
-- Open the My_Course.swc file
-- Call the the install_course() function in swirl, which will prompt you to select the file you downloaded.
-- Start the course by calling the swirl() function
-- **To view the code, open the lesson.yaml file**
+1. In R Studio, open the project containing the forked repository.
+2. Open the My_Course.swc file
+3. Call the the install_course() function in swirl, which will prompt you to select the file you downloaded.
+4. Start the course by calling the swirl() function
+**To view the code, open the lesson.yaml file**
