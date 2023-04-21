@@ -4,7 +4,7 @@ A swirl course designed to provide learners with a foundation in using regular e
 
 **Technical Details:**
 
-This course was made with R's programming language, using the swirlify, swirl, and stringr packages. The lesson contains the following interactive components: text, mult_question, cmd_question, link
+This course was made with R's programming language, using the swirlify, swirl, and stringr packages. The lesson contains the following interactive components: text, mult_question, cmd_question, and a link.
 
 The lesson covers the following topics
 - Definition of regular expressions
